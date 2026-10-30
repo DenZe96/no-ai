@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>No AI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>No AI</h1>
+  <p class="sub">Google-Suche ohne KI</p>
+  <form id="modes">
+    <label>
+      <input type="radio" name="mode" value="hide">
+      <span><strong>KI ausblenden</strong><br>
+      Versteckt die KI-Übersicht und den KI-Modus. Bilder, Karten usw. bleiben.</span>
+    </label>
+    <label>
+      <input type="radio" name="mode" value="web">
+      <span><strong>Nur Web-Ergebnisse</strong><br>
+      Wechselt automatisch zum Tab „Web“ – garantiert ohne KI, aber auch ohne Extras.</span>
+    </label>
+    <label>
+      <input type="radio" name="mode" value="off">
+      <span><strong>Aus</strong><br>
+      Google wie gewohnt.</span>
+    </label>
+  </form>
+  <script src="popup.js"></script>
+</body>
+</html>

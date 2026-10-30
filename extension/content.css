@@ -1,0 +1,13 @@
+/* Only active while the extension has marked the page (mode "hide" or "web"). */
+
+/* AI Overview blocks found by content.js */
+html[data-noai] [data-noai-hidden] {
+  display: none !important;
+}
+
+/* "AI Mode" tab and links (AI Mode uses udm=50) */
+html[data-noai] a[href*="udm=50"],
+html[data-noai] [role="listitem"]:has(> a[href*="udm=50"]),
+html[data-noai] [role="listitem"]:has(> div > a[href*="udm=50"]) {
+  display: none !important;
+}
